@@ -60,6 +60,10 @@ img {
 .link {
   text-decoration: none;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ----- START COMPONENTS ----- */
 
 /* ----- START HEADER ----- */
@@ -87,10 +91,6 @@ img {
   display: flex;
   align-items: center;
 }
-/* .nav-list-item{
-  padding-top: 32px;
-  padding-bottom: 32px;
-} */
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -182,10 +182,7 @@ img {
 /* ----- END HERO ----- */
 
 /* ----- START BENEFITS ----- */
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -236,8 +233,6 @@ img {
 /* ----- START OUR TEAM ----- */
 .team {
   background-color: var(--secondary-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-title {
   font-weight: 700;
@@ -329,9 +324,7 @@ img {
 .border-header {
   border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
-.portfolio {
-  padding: 94px 215px;
-}
+
 .portfolio-button-list {
   display: flex;
   justify-content: center;
