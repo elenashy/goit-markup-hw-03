@@ -360,7 +360,15 @@ img {
   color: var(--secondary-text-btn-color);
   background-color: var(--accent-color);
 }
-*/ .portfolio-title {
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.portfolio-list-item {
+  width: 370px;
+}
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
