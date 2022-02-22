@@ -138,13 +138,27 @@ img {
 .contact-tel:focus {
   color: var(--accent-color);
 }
+.contact-list-icon-item {
+  display: flex;
+  align-items: center;
+}
+.contact-list-icon-item:hover .contact-list-icon,
+.contact-list-icon-item:focus .contact-list-icon {
+  fill: var(--accent-color);
+}
+.contact-list-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  cursor: pointer;
+}
 /* ----- END HEADER ----- */
 
 /* ----- START HERO ----- */
 .hero {
-  background-color: var(--primary-background-color);
+  background-color: #c4c4c4;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../img/hero-img.jpg);
 }
 .hero-title {
   align-items: center;
@@ -221,6 +235,19 @@ img {
 
   margin-top: 10px;
 }
+.benefits-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  height: 120px;
+  width: 270px;
+
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+}
+
 /* ----- END BENEFITS ----- */
 
 /* ----- START WHAT ARE WE DOING ----- */
@@ -265,6 +292,9 @@ img {
 }
 .team-list-item {
   background-color: var(--team-list-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-container {
   padding: 30px 0;
@@ -283,15 +313,92 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
   margin-top: 10px;
+}
+.social-list-item-icon:not(:first-child) {
+  margin-left: 10px;
+}
+.social-list-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.social-icons {
+  fill: #afb1b8;
+}
+.social-list-link:hover .social-icons,
+.social-list-link:focus .social-icons {
+  fill: var(--secondary-text-btn-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
 }
 /* ----- END OUR TEAM ----- */
 
+/* ----- START CLIENTS ----- */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--secondary-text-color);
+}
+.clients-list {
+  display: flex;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+}
+.clients-list-item:not(:first-child) {
+  margin-left: 30px;
+}
+.clients-list-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icon-clients {
+  fill: #afb1b8;
+}
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
+  fill: var(--accent-color);
+}
+/* ----- END CLIENTS ----- */
+
 /* ----- START FOOTER ----- */
+.container-footer {
+  display: flex;
+  align-items: baseline;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .footer {
   background-color: var(--primary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 .logo-footer {
   display: inline-block;
@@ -338,6 +445,48 @@ img {
 
   color: var(--primary-text-footer-color);
 }
+.join-container {
+  height: 80px;
+  width: 206px;
+  margin-left: 70px;
+}
+.join-title {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-hero-text-color);
+  margin-bottom: 20px;
+}
+.social-list-icon-footer {
+  display: flex;
+}
+.social-list-item-icon-footer:not(:first-child) {
+  margin-left: 10px;
+}
+.social-list-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--accent-color);
+}
+.social-icons-footer {
+  fill: #ffffff;
+}
+
 /* ----- END FOOTER ----- */
 
 /* ====== !!START PORTFOLIO!! ====== */
